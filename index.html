@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Pura Host - Hébergement Serveur Minecraft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pura Host : Hébergement de serveur Minecraft performant et abordable pour jouer entre amis.">
+    <style>
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Conteneur principal avec bordures */
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+
+        /* Style d'en-tête comme les anciens sites */
+        header {
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid #000;
+            background-color: #eee;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #4a4a4a;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #8e44ad;
+            margin: 5px 0;
+        }
+
+        /* Section de l'offre */
+        .offer {
+            padding: 20px;
+            border: 1px solid #8e44ad;
+            margin-top: 10px;
+        }
+
+        .offer h3 {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #8e44ad;
+            font-weight: bold;
+        }
+
+        .features {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #8e44ad;
+            list-style-type: square;
+            color: #333;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #8e44ad;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #333;
+        }
+
+        /* Style rétro pour les sections supplémentaires */
+        .section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #8e44ad;
+            background-color: #f7f7f7;
+        }
+
+        .section h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Avis clients */
+        .testimonials {
+            padding: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .testimonial {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #eee;
+            border-top: 2px solid #000;
+            font-size: 12px;
+            color: #333;
+        }
+
+        /* Style de la pop-up */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #8e44ad;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .close {
+            font-size: 16px;
+            color: #8e44ad;
+            font-weight: bold;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pura Host</h1>
+            <h2>Hébergement Serveur Minecraft - Notre Offre Unique</h2>
+        </header>
+
+        <div class="offer">
+            <h3>Serveur Minecraft Performant</h3>
+            <p>Accédez à un serveur Minecraft haute performance pour un prix abordable. Parfait pour jouer entre amis, sans limite de joueurs et avec une sécurité avancée.</p>
+            <p class="price">3,50 € / mois</p>
+            <ul class="features">
+                <li><strong>Processeur :</strong> 2 VCores</li>
+                <li><strong>Mémoire Vive :</strong> 4 Go RAM DDR4</li>
+                <li><strong>Stockage :</strong> 40 Go NVMe</li>
+                <li><strong>Bases de Données :</strong> 5</li>
+                <li><strong>Sauvegardes :</strong> 5</li>
+                <li><strong>Protection :</strong> Anti-DDoS</li>
+                <li><strong>Bande Passante :</strong> 500 Mb/s</li>
+            </ul>
+            <a href="#" class="cta-button" onclick="openModal()">Souscrire à l'offre</a>
+        </div>
+
+        <div class="section">
+            <h4>Pourquoi Choisir Pura Host ?</h4>
+            <p>Chez Pura Host, nous vous offrons un hébergement robuste et fiable. Nous nous concentrons sur la qualité et la simplicité, afin que vous puissiez profiter pleinement de vos sessions de jeu sans soucis techniques.</p>
+        </div>
+
+        <div class="section">
+            <h4>Commentaires de Nos Clients</h4>
+            <div class="testimonials">
+                <p class="testimonial">"Le serveur fonctionne parfaitement ! Mes amis et moi jouons sans aucune interruption." - <strong>Maxime</strong></p>
+                <p class="testimonial">"L'installation a été rapide et le support est très réactif !" - <strong>Sophie</strong></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 Pura Host - Tous droits réservés.</p>
+            <p><a href="mailto:support@purahost.com">Contactez-nous</a></p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h3>Demande en Cours</h3>
+            <p>Nous ne pouvons pas traiter toutes les demandes immédiatement, mais nous nous engageons à traiter la vôtre sous 48 heures.</p>
+            <a href="https://buy.stripe.com/28ofZFgXf8Y11moeUX" class="cta-button">Passer à la caisse</a>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        function openModal() {
+            modal.style.display = "flex";
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
